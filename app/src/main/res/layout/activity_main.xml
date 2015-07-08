@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="系統通知測試" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通知一"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:onClick="btn01_Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通知二"
+        android:id="@+id/button2"
+        android:onClick="btn02_Click"
+        android:layout_above="@+id/buttonbigP"
+        android:layout_alignLeft="@+id/buttonAll"
+        android:layout_alignStart="@+id/buttonAll" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通知三"
+        android:id="@+id/button3"
+        android:onClick="btn03_Click"
+        android:layout_above="@+id/buttonbigP"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大圖通知"
+        android:id="@+id/buttonbigP"
+        android:onClick="btnbigP_Click"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大圖通知二"
+        android:id="@+id/buttonbigP2"
+        android:onClick="btnbigP2_Click"
+        android:layout_above="@+id/buttonAll"
+        android:layout_toRightOf="@+id/buttonbigP"
+        android:layout_toEndOf="@+id/buttonbigP" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清除二"
+        android:id="@+id/btnClear1"
+        android:onClick="btnClear_Click"
+        android:layout_below="@+id/buttonbigP"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清除全部"
+        android:id="@+id/buttonAll"
+        android:onClick="btnClearAll_Click"
+        android:layout_below="@+id/buttonbigP"
+        android:layout_toRightOf="@+id/btnClear1"
+        android:layout_toEndOf="@+id/btnClear1" />
+</RelativeLayout>
