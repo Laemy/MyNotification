@@ -53,7 +53,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="大圖通知二"
+        android:text="多文通知"
         android:id="@+id/buttonbigP2"
         android:onClick="btnbigP2_Click"
         android:layout_above="@+id/buttonAll"
@@ -63,7 +63,17 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="清除二"
+        android:text="列表通知"
+        android:id="@+id/buttonbigP3"
+        android:onClick="btnbigP3_Click"
+        android:layout_above="@+id/buttonAll"
+        android:layout_toRightOf="@+id/buttonbigP2"
+        android:layout_toEndOf="@+id/buttonbigP2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清除三"
         android:id="@+id/btnClear1"
         android:onClick="btnClear_Click"
         android:layout_below="@+id/buttonbigP"
